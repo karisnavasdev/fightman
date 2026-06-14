@@ -1,6 +1,6 @@
 (function () {
   const CONFIG = {
-    ca: "fightpump",
+    ca: "mk1fBU7v78u1pHkf2gKEYv3TNECG5oXgKDJxReApump",
     ticker: "$FIGHTMAN",
     name: "FIGHTMAN",
     x: "https://x.com/fightmancoin",
