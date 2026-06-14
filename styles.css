@@ -554,6 +554,32 @@ code {
   max-width: 100%;
 }
 
+.hero-tweets {
+  width: min(920px, 100%);
+  margin-top: 2.5rem;
+}
+
+.hero-tweets-label {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.hero-tweets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.hero-tweets-grid .twitter-tweet {
+  margin: 0 !important;
+}
+
 .scroll-hint {
   position: absolute;
   bottom: 1.5rem;
@@ -937,6 +963,7 @@ code {
 .reveal-delay-5 { transition-delay: 0.5s; }
 .reveal-delay-6 { transition-delay: 0.6s; }
 .reveal-delay-7 { transition-delay: 0.7s; }
+.reveal-delay-8 { transition-delay: 0.85s; }
 
 .stagger.is-visible > * {
   animation: stagger-in 0.5s ease forwards;
@@ -1001,6 +1028,10 @@ code {
 
   .scroll-hint {
     display: none;
+  }
+
+  .hero-tweets-grid {
+    grid-template-columns: 1fr;
   }
 }
 
